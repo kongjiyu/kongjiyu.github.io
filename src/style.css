@@ -456,6 +456,36 @@ button:focus {
   background-image: var(--section-background-color) !important;
 }
 
+/* --------- */
+/* Experience */
+/* --------- */
+.experience-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.experience-card {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+/* --------- */
+/* Education */
+/* --------- */
+.education-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+}
+
+.education-card {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
 .project-card {
   padding-top: 50px !important;
   padding-bottom: 50px !important;

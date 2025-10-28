@@ -7,12 +7,34 @@ import { BsGithub } from "react-icons/bs";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      {props.imgPath && <Card.Img variant="top" src={props.imgPath} alt="card-img" />}
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
+        
+        {/* Tech Stack Badges */}
+        {props.techStack && (
+          <div style={{ marginBottom: "15px", display: "flex", flexWrap: "wrap", gap: "8px" }}>
+            {props.techStack.map((tech, index) => (
+              <span
+                key={index}
+                style={{
+                  backgroundColor: "#623686",
+                  color: "white",
+                  padding: "4px 12px",
+                  borderRadius: "12px",
+                  fontSize: "0.85em",
+                  fontWeight: "500",
+                }}
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
+        
         <Button variant="primary" href={props.ghLink} target="_blank">
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}

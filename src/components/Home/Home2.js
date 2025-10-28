@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/profile.png";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
@@ -13,17 +13,16 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I'm a passionate software engineer pursuing my Bachelor of Software Engineering at TAR UMT with a CGPA of 3.9/4.0.
+              With hands-on experience in CRM consulting, cloud infrastructure, and full-stack development,
+              I specialize in building scalable web applications and helping businesses optimize their systems.
               <br />
               <br />
-              I’m proficient in
+              I'm proficient in
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  JavaScript, TypeScript, Java, and Python{" "}
                 </b>
               </i>
               — and I enjoy working across both backend and frontend stacks.
@@ -33,17 +32,18 @@ function Home2() {
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  Web Applications, Cloud Infrastructure, and CRM Solutions{" "}
                 </b>
               </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              — with a focus on creating scalable and user-friendly systems.
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
+              I'm the founder of <b className="purple">K&E Tech Innovations</b>, where I lead digital transformation projects.
+              Whenever possible, I love building projects with modern frameworks like{" "}
               <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
+                <b className="purple">React.js</b>,{" "}
+                <b className="purple">Next.js</b>, and{" "}
+                <b className="purple">Firebase</b>.
               </i>
             </p>
           </Col>

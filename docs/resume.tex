@@ -1,0 +1,254 @@
+%-------------------------
+% Resume in Latex
+% Author : Vaishanth
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}%\setmainfont{Times New Roman}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{cochineal}
+% \usepackage{fourier}
+
+% \usepackage{fontspec}
+% \usepackage{polyglossia}
+% \setmainlanguage{german}
+% \setmainfont{Times New Roman}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSingleSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------\usepackage{fontspec}
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+
+
+\begin{center}
+    {\huge Kong Ji Yu} \\ \vspace{2pt} 
+    {+60 10-2407930} ~ 
+    \small{-}
+    \href{https://www.overleaf.com/read/pknmtygnwbzx#9ef4bb}{\color{blue}{Portfolio}} ~ 
+    \small{-}
+    \href{mailto:kongjiyu0198@gmail.com}{\color{blue}{kongjiyu0198@gmail.com}} ~ 
+    \small{-}
+    \href{https://www.linkedin.com/in/ji-yu-kong-249516279/}{ \color{blue}{linkedin.com/in/kongjiyu}}  ~
+    \small{-}
+    \href{https://github.com/kongjiyu}{ \color{blue}{github.com/kongjiyu}} ~
+    \vspace{-7pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\color{airforceblue}EDUCATION}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Tunku Abdul Rahman University of Management and Technology (TAR UMT)}{}
+      {Bachelor of Software Engineering with Honours}{June 2025 - Present}
+    
+
+    \vspace{-4pt}
+     \resumeSubheading
+      {Tunku Abdul Rahman University of Management and Technology (TAR UMT)
+}{}
+      {Diploma in Computer Science}{June 2023 - May 2025}
+        \resumeItemListStart
+    \resumeItem{CGPA: 3.9 / 4.0}
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\color{airforceblue}TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Programming Languages:}}{ \normalsize{Javascript, React, Java, Assembly, MySQL, Shell Script, Python}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Libraries and Tools:}}{ \normalsize{Git, Docker, datatables, FlyonUI, MagicUI}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Cloud:}}{ \normalsize{Oracle Cloud Infrastructure, Firebase}} \\
+     \vspace{1.2pt}
+
+     \textbf{\normalsize{Languages:}}{ \normalsize{Chinese, English, Malay}}
+
+     % copy and paste above textbf block to add more 
+     }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ %-----------EXPERIENCE-----------
+\section{\color{airforceblue}WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {CRM \& Cloud Intern}{} 
+      {Global Genesis, Malaysia}{September 2024 - January 2025}
+      \resumeItemListStart
+        \resumeItem{Configured Oracle Cloud Compute infrastructure and supported initial deployment for CRM-related services.}
+        \resumeItem{Led CRM data migration and database configuration tasks to streamline onboarding process.}
+        \resumeItem{Performed customer requirement analysis and proposed cloud-integrated CRM solutions.}
+        \resumeItem{Collaborated with clients in meetings to capture technical and business requirements.}
+        \resumeItem{Successfully closed a CRM software deal by identifying client pain points and tailoring solutions.}
+        \resumeItem{Delivered actionable insights through data analysis to improve CRM adoption strategy.}
+      \resumeItemListEnd  
+    
+    \resumeSubheading
+      {CRM Consultant}{} 
+      {Dr.Factory, Malaysia}{March 2025 – June 2025}
+      \resumeItemListStart
+        \resumeItem{Provided end-to-end CRM consultation services to clients across industries.}
+        \resumeItem{Managed system configuration and data migration to new CRM platforms, ensuring data integrity.}
+        \resumeItem{Worked closely with clients to customize CRM setups for their unique workflows and objectives.}
+        \resumeItem{Trained clients and key users on CRM usage to increase system adoption and long-term success.}
+      \resumeItemListEnd  
+    
+    \resumeSubheading
+      {Founder \& Project Consultant}{} 
+      {K\&E Tech Innovations, Malaysia}{2025 – Present}
+      \resumeItemListStart
+        \resumeItem{Established a digital solutions company delivering both landing page websites and dynamic web systems.}
+        \resumeItem{Developed landing pages using WordPress with tailored SEO configurations via Yoast SEO plugin.}
+        \resumeItem{Integrated Google Analytics to track site performance, visitor behavior, and marketing effectiveness.}
+        \resumeItem{Architected full-stack web systems using React for frontend and Firebase for backend services and hosting.}
+        \resumeItem{Managed freelance teams across multiple projects, overseeing planning, requirement gathering, and delivery.}
+        \resumeItem{Actively involved in technical troubleshooting and solution design to ensure project stability and quality.}
+      \resumeItemListEnd  
+    % copy and paste above resumeSubheading block to add more 
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+\end{document}
